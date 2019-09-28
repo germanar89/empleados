@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define TAME 10
+
+typedef struct
+{
+    int id;
+    char name[51];
+    char lastName[51];
+    float salary;
+    int sector;
+    int isEmpty;
+
+} eEmploye;
+
+int menu();
+
+
+int main()
+{
+    eEmploye employes[TAME];
+    int opcion;
+
+    do
+    {
+        switch(menu())
+        {
+        case 1:
+        
+            break;
+        case 2:
+
+            break;
+        case 3:
+
+            break;
+        case 4:
+
+            break;
+        case 5:
+            printf("saliendo\n");
+        break;
+            break;    
+
+
+        }
+    }
+    while (opcion != 5);
+
+
+    return 0;
+}
+int menu()
+{
+    int opcion;
+
+    printf("*** ABM EMPLEADOS ***\n\n");
+    printf("1. ALTAS:\n");
+    printf("2. MODIFICAR:\n");
+    printf("3. BAJA:\n");
+    printf("4. INFORMAR:\n");
+    printf("4. Salir\n");
+
+    scanf("%d",&opcion);
+
+    return opcion;
+
+
+}
